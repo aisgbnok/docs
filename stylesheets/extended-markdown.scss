@@ -32,3 +32,19 @@
 .warning {
   font-weight: normal;
 }
+
+.clipboard-container {
+  margin-top: 0.5rem;
+}
+
+.markdown-body .highlight:hover .clipboard-container,
+.markdown-body .snippet-clipboard-content:hover .clipboard-container {
+  display: block;
+  animation: fade-in 200ms both;
+}
+
+.markdown-body .highlight .clipboard-container,
+.markdown-body .snippet-clipboard-content .clipboard-container {
+  display: none;
+  animation: fade-out 200ms both;
+}
